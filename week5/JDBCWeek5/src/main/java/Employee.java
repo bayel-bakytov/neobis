@@ -1,5 +1,4 @@
 import util.ConnectionManager;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -42,8 +41,6 @@ public class Employee {
             preparedStatement.executeUpdate();
             prSecond.setInt(1, 4);
             prSecond.executeUpdate();
-
-            System.out.println("success");
             connection.commit();
         } catch (SQLException e) {
             System.out.println("no ");

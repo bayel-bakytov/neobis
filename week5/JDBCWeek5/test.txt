@@ -1,2 +1,2 @@
-I worked with DAO files, I also made connection pooling requests for transactions.
+I worked with DAO files, I also made connection pooling requests.And i made transactions requests.
 studied jdbc by articles and videos
