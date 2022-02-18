@@ -19,7 +19,7 @@ public class CustomerController {
     public ResponseEntity registration(@RequestBody Customer customer) {
         try {
             customerService.addCustomer(customer);
-            return new ResponseEntity(customer, HttpStatus.valueOf("Пользователь добавлен"));
+            return ResponseEntity.ok("Пользователь успешно сохранен");
        } catch (CustomerException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
