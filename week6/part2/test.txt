@@ -1,0 +1,103 @@
+1. Brief description requirement
+2. Path url
+3. Parameters output
+
+1. add data
+2. POST http://localhost:8081/customer/add-customer/
+3.{
+    "address": "123",
+    "firstName": "baiel",
+    "lastName": "bakytov",
+    "city": "bishkek",
+    "phoneNumber": "07051111",
+    "email": "1238@gmail.com"
+  }
+  status 200
+
+------------------------------------
+
+1. update data
+2. PUT http://localhost:8081/customer/edit/0
+3. {
+   "id": 0,
+    "firstName": "ayan",
+    "lastName": "bakytov",
+    "phoneNumber": "07051111"
+   }
+   status 200
+
+------------------------------------
+
+1. delete data
+2. DELETE http://localhost:8081/customer/7
+3. result is id of data : 7
+ status 200
+
+------------------------------------
+
+1. Get a data by it's id
+2. GET http://localhost:8081/customer?id=8
+3.{
+    "id": 8,
+    "firstName": "sak",
+    "lastName": "shaiymbetov",
+    "phoneNumber": "07051111"
+  }
+ status 200
+
+------------------------------------
+
+1. Get all data
+2. GET http://localhost:8081/customer/all-customers
+3. [
+    {
+        "id": 1,
+        "firstName": "igor",
+        "lastName": "kaynarov",
+        "phoneNumber": "0123456789"
+    },
+    {
+        "id": 2,
+        "firstName": null,
+        "lastName": null,
+        "phoneNumber": null
+    },
+    {
+        "id": 3,
+        "firstName": "baiel",
+        "lastName": "bakytov",
+        "phoneNumber": "07051111"
+    },
+    {
+        "id": 6,
+        "firstName": "jandos",
+        "lastName": "shaiymbetov",
+        "phoneNumber": "07051111"
+    },
+    {
+        "id": 7,
+        "firstName": "ayan",
+        "lastName": "bakytov",
+        "phoneNumber": "07051111"
+    },
+    {
+        "id": 8,
+        "firstName": "sak",
+        "lastName": "shaiymbetov",
+        "phoneNumber": "07051111"
+    },
+    {
+        "id": 9,
+        "firstName": "baiel",
+        "lastName": "bakytov",
+        "phoneNumber": "07051111"
+    },
+    {
+        "id": 10,
+        "firstName": "baiel",
+        "lastName": "bakytov",
+        "phoneNumber": "07051111"
+    }
+]
+	status 200
+
