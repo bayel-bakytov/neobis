@@ -1,0 +1,4 @@
+CREATE TABLE price (
+price_id INT NOT NULL AUTO_INCREMENT,
+price_sale DOUBLE NOT NULL,
+PRIMARY KEY (price_id));

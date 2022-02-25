@@ -1,0 +1,1 @@
+ALTER table price add column item varchar(255);
