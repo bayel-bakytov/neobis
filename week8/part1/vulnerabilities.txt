@@ -1,0 +1,4 @@
+The first most important vulnerability was that the user's passwords 
+were displayed in the database and there was no protection for clearing cookies.
+These issues have now been resolved and will continue to improve.
+
