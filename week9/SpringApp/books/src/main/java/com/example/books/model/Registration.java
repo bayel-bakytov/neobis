@@ -1,5 +1,7 @@
-package com.example.books.entity;
+package com.example.books.model;
 
+import com.example.books.entity.Role;
+import com.example.books.entity.User;
 import lombok.Data;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
