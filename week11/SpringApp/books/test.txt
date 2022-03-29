@@ -1,0 +1,33 @@
+###
+POST http://localhost:8080/api/registr
+Body:
+{
+    "city":"karakol",
+    "email":"7899@gmail.com",
+    "firstName":"bayel123",
+    "lastName":"bakytov",
+    "password":"123"
+}
+Output:
+registred success
+
+###
+POST http://localhost:8080/api/auth
+Body:
+{
+    "firstName":"bayel123",
+    "password":"123"
+}
+Output:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJiYXllbDEyMyIsImV4cCI6MTY0OTgwODAwMH0.UtQMSUjJwmGn4aKkEYBh0k2l1Zltug3g8TvbGEvbarXD8QYpwngLztfKDPGalzXI2lK_TYJvQvwAPQ71ewIdlg"
+}
+
+###
+GET http://localhost:8080/api/user
+Authorization:
+    Type: Bearer Token
+    Token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJiYXllbDEyMyIsImV4cCI6MTY0OTgwODAwMH0.UtQMSUjJwmGn4aKkEYBh0k2l1Zltug3g8TvbGEvbarXD8QYpwngLztfKDPGalzXI2lK_TYJvQvwAPQ71ewIdlg
+Body: none
+Output:
+This is user Page!
