@@ -54,7 +54,7 @@ public class MultiApiWebSecurityAdapter {
                     .authorizeRequests()
                     .antMatchers("/admin/**").hasRole(Role.ADMIN.toString())
                     .antMatchers("/user/**").hasRole(Role.ADMIN.toString())
-                    .antMatchers("/api/auth", "api/registr").permitAll()
+                    .antMatchers("/api/auth", "/api/registr").permitAll()
                     .anyRequest().authenticated()
                     .and()
                     .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
